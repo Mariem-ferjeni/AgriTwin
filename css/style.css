@@ -1,0 +1,500 @@
+/* =========================
+
+   GENERAL
+
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+}
+
+body {
+
+    background: #F8FAF5;
+
+    color: #123D2A;
+
+}
+
+.dashboard {
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+
+/* =========================
+
+   SIDEBAR
+
+========================= */
+
+.sidebar {
+
+    width: 270px;
+
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, #064E32, #003B27);
+
+    color: white;
+
+    padding: 30px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.logo {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+}
+
+.logo-container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.logo-container img {
+
+    width: 48px;
+
+    height: 48px;
+
+    object-fit: contain;
+
+}
+
+.logo-container h2 {
+
+    color: #91E34E;
+
+    font-size: 29px;
+
+}
+
+.logo p {
+
+    font-size: 13px;
+
+    margin-top: 10px;
+
+    color: #D5EBDD;
+
+}
+
+.sidebar nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.sidebar nav a {
+
+    color: #E8F5EC;
+
+    text-decoration: none;
+
+    padding: 15px 14px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+.sidebar nav a:hover,
+
+.sidebar nav a.active {
+
+    background: linear-gradient(90deg, #C8F36A, #79D83D);
+
+    color: #064E32;
+
+    transform: translateX(4px);
+
+}
+
+/* DECONNEXION */
+
+.logout {
+
+    margin-top: auto;
+
+    padding-top: 30px;
+
+}
+
+.logout a {
+
+    display: block;
+
+    padding: 14px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-top: 1px solid #397455;
+
+}
+
+/* =========================
+
+   CONTENU
+
+========================= */
+
+.main-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+/* =========================
+
+   HEADER
+
+========================= */
+.header {
+
+      
+    min-height: 150px;
+
+    padding: 15px;
+
+    background-image: url("/AgriTwin/images/Green.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border-radius: 25px;
+
+}
+
+.header h2 {
+
+    color: #064E32;
+
+    font-size: 28px;
+
+    margin-bottom: 7px;
+
+}
+
+.header p {
+
+    color: #668071;
+
+    font-size: 14px;
+
+}
+
+.profile {
+
+    background: #E8F5D9;
+
+    color: #064E32;
+
+    padding: 13px 20px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+}
+
+/* =========================
+
+   ZONE PRINCIPALE
+
+========================= */
+
+.content {
+
+    padding: 35px;
+
+}
+
+.content h2 {
+
+    color: #064E32;
+
+    margin-bottom: 10px;
+
+    font-size: 25px;
+
+}
+
+.description {
+
+    color: #718477;
+
+    margin-bottom: 30px;
+
+}
+
+/* =========================
+
+   CARTES STATISTIQUES
+
+========================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+.card {
+
+    background: linear-gradient(145deg, #FFFFFF, #F0F9E8);
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+
+    border: 1px solid #DCEBD4;
+
+    border-left: 4px solid #79D83D;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.card:nth-child(2) {
+
+    background: linear-gradient(145deg, #FFFFFF, #DDF5EF);
+
+    border-left-color: #58C9B5;
+
+}
+
+.card:nth-child(3) {
+
+    background: linear-gradient(145deg, #FFFFFF, #FFF0D8);
+
+    border-left-color: #F5B544;
+
+}
+
+.card:nth-child(4) {
+
+    background: linear-gradient(145deg, #FFFFFF, #F0E9FF);
+
+    border-left-color: #A98BEE;
+
+}
+
+.card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+
+}
+
+.card span {
+
+    font-size: 35px;
+
+}
+
+.card h3 {
+
+    font-size: 17px;
+
+    margin: 15px 0;
+
+    color: #214A36;
+
+}
+
+.card h2 {
+
+    font-size: 32px;
+
+    color: #064E32;
+
+}
+
+.card p {
+
+    color: #829286;
+
+    font-size: 13px;
+
+}
+
+/* =========================
+
+   BIENVENUE
+
+========================= */
+.welcome-card {
+
+    min-height: 320px;
+
+    padding: 40px;
+
+    background-image: url("/AgriTwin/images/welcome-banner.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    border-radius: 25px;
+
+}
+
+.welcome-card h2 {
+
+    color: #075333;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+.welcome-card p {
+
+    color: #476650;
+
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+
+}
+
+/* =========================
+
+   BOUTON
+
+========================= */
+
+button {
+
+    background: linear-gradient(90deg, #075333, #16834A);
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    background: #79D83D;
+
+    color: #064E32;
+
+    transform: translateY(-3px);
+
+}
+
+/* =========================
+
+   RESPONSIVE
+
+========================= */
+
+@media (max-width: 1100px) {
+
+    .cards {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .dashboard {
+
+        flex-direction: column;
+
+    }
+
+    .sidebar {
+
+        width: 100%;
+
+        min-height: auto;
+
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .header {
+
+        padding: 20px;
+
+    }
+
+    .content {
+
+        padding: 20px;
+
+    }
+
+}
