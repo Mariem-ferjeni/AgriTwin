@@ -1,0 +1,12 @@
+
+# Fichiers de configuration contenant des informations sensibles
+/config/config.php
+/config/database.php
+
+# Fichiers temporaires
+*.log
+.DS_Store
+Thumbs.db
+/database/agritwin_final.sql
+/database/migrations/002_demo_data.sql
+/database/original/
